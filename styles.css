@@ -48,13 +48,80 @@ body {
 }
 
 button {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    background-color: #FF69B4;
+    color: #fff;
     border: none;
-    color: rgb(226, 8, 8), 255, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-shadow: 1px 2px 3px rgb(4, 0, 255);
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 1px 2px 3px #000;
-    transition: all 0.3s ease;
-    background: linear-gradient(180deg, #FFC0CB, #fd97ca);
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.alert-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.alert-box h2 {
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #007bff;
+    text-shadow: 1px 2px 3px #000;
+}
+
+.alert-box p {
+
+    font-size: 25px;
+    margin: 0;
+
+    text-align: center;
+    color: #ff00c8;
+    text-shadow: 1px 1px 1px#000000;
+
+}
+
+.alert-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
